@@ -1,11 +1,11 @@
-name = "cloudflare-email"
+name = "cloudflare-email-01"
 main = "src/worker.ts"
 compatibility_date = "2025-04-01"
 compatibility_flags = [ "nodejs_compat" ]
 # if you want use custom_domain, you need to add routes
-# routes = [
-# 	{ pattern = "temp-email-api.xxxxx.xyz", custom_domain = true },
-# ]
+ routes = [
+ 	{ pattern = "joker2025.dpdns.org", custom_domain = true },
+ ]
 
 # if you want deploy worker with frontend assets, you need to add assets
 # [assets]
@@ -41,8 +41,8 @@ PREFIX = "tmp"
 # DISABLE_ADMIN_PASSWORD_CHECK = false
 # ADMIN CONTACT, CAN BE ANY STRING
 # ADMIN_CONTACT = "xx@xx.xxx"
-DEFAULT_DOMAINS = ["xxx.xxx1" , "xxx.xxx2"] # domain name for no role users
-DOMAINS = ["xxx.xxx1" , "xxx.xxx2"] # all domain names
+DEFAULT_DOMAINS = ["joker2025.dpdns.org"] # domain name for no role users
+DOMAINS = ["joker2025.dpdns.org"] # all domain names
 # For chinese domain name, you can use DOMAIN_LABELS to show chinese domain name
 # DOMAIN_LABELS = ["中文.xxx", "xxx.xxx2"]
 # USER_DEFAULT_ROLE = "vip" # default role for new users(only when enable mail verification)
@@ -52,7 +52,7 @@ DOMAINS = ["xxx.xxx1" , "xxx.xxx2"] # all domain names
 #    { domains = ["xxx.xxx1" , "xxx.xxx2"], role = "vip", prefix = "vip" },
 #    { domains = ["xxx.xxx1" , "xxx.xxx2"], role = "admin", prefix = "" },
 # ]
-JWT_SECRET = "xxx"
+JWT_SECRET = "a1b2c3d4e5f6g7h8i9j0kAlBmCnDoEpFqGrHsItJuKvLwMxNyOzP"
 BLACK_LIST = ""
 # Allow users to create email addresses
 ENABLE_USER_CREATE_EMAIL = true
